@@ -24,12 +24,87 @@
     footer{padding:25px 0;border-top:1px solid var(--line);font-size:12px;color:#78827b}.foot{display:flex;justify-content:space-between;gap:20px}
     @media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:125px;gap:15px;min-height:auto}.hero-copy{width:auto;margin:0 24px}.portrait-stage{height:430px;width:100%;margin:0 auto;max-width:520px;margin:auto;width:100%}.hero-art{min-height:370px}.service-grid{grid-template-columns:1fr 1fr}.about-grid{grid-template-columns:1fr;gap:20px}.process-grid{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head p{margin-top:15px}.contact-panel{padding:35px;display:block}.contact-panel .btn{margin-top:25px}}
     @media(max-width:560px){.wrap{width:min(100% - 34px,1160px)}.hero-copy{margin:0 17px}.hero-copy h1{font-size:44px;letter-spacing:-2px}.portrait-stage{height:350px}.portrait-orbit{width:260px;height:260px}.orbit-b{width:300px;height:300px}.portrait-caption{right:0;bottom:12px}.hero-wave{height:48px}nav{height:66px}.navlinks{display:none}.menu{display:block}.hero{padding:54px 0}.hero-art{min-height:330px;padding:20px}.art-card.one{left:15px;top:92px;width:180px}.art-card.two{right:12px;bottom:35px;width:170px}.art-orbit{right:-140px}.art-tag{left:20px}.service-grid,.work-grid,.process-grid{grid-template-columns:1fr}section{padding:65px 0}.work-visual{height:220px}.contact-panel{padding:28px}.foot{display:block}.foot span{display:block;margin-top:8px}h1{letter-spacing:-2.5px}}
-  section{padding:104px 0}.hero{min-height:690px;background:#151515}.hero-copy h1{max-width:700px}.nav-cta,.btn{background:#ff781f;color:#fff}.btn.light{background:transparent;border:1px solid #ff9a4a;color:#fff}.section-head{margin-bottom:44px}.service-grid,.work-grid{gap:22px}.service{min-height:245px;padding:32px}.work{box-shadow:0 14px 35px #14251a0b;transition:transform .25s,box-shadow .25s}.work:hover{transform:translateY(-5px);box-shadow:0 22px 45px #14251a16}.work-visual.photo-work{padding:0;height:270px;position:relative}.photo-work img{width:100%;height:100%;object-fit:cover;display:block}.photo-work:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#10171366)}.work-info{padding:25px 26px 28px}.work-info h3{font-size:20px}.work-info p{font-size:14px}.contact-panel{background:#ff781f;color:#171717}.contact-panel .kicker{color:#38200f}.contact-panel p{color:#38200f}.contact-panel .btn{background:#171717;color:#fff}.about .kicker{color:#ff9a4a}.services .kicker,.section-head .kicker{color:#e66b19}@media(max-width:800px){.hero{min-height:auto;padding:120px 0 75px}.section-head{margin-bottom:32px}}@media(max-width:560px){section{padding:76px 0}.hero-copy h1{font-size:39px}.work-visual.photo-work{height:225px}.service{min-height:auto}}</style>
+  section{padding:104px 0}.hero{min-height:690px;background:#151515}.hero-copy h1{max-width:700px}.nav-cta,.btn{background:#ff781f;color:#fff}.btn.light{background:transparent;border:1px solid #ff9a4a;color:#fff}.section-head{margin-bottom:44px}.service-grid,.work-grid{gap:22px}.service{min-height:245px;padding:32px}.work{box-shadow:0 14px 35px #14251a0b;transition:transform .25s,box-shadow .25s}.work:hover{transform:translateY(-5px);box-shadow:0 22px 45px #14251a16}.work-visual.photo-work{padding:0;height:270px;position:relative}.photo-work img{width:100%;height:100%;object-fit:cover;display:block}.photo-work:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#10171366)}.work-info{padding:25px 26px 28px}.work-info h3{font-size:20px}.work-info p{font-size:14px}.contact-panel{background:#ff781f;color:#171717}.contact-panel .kicker{color:#38200f}.contact-panel p{color:#38200f}.contact-panel .btn{background:#171717;color:#fff}.about .kicker{color:#ff9a4a}.services .kicker,.section-head .kicker{color:#e66b19}@media(max-width:800px){.hero{min-height:auto;padding:120px 0 75px}.section-head{margin-bottom:32px}}@media(max-width:560px){section{padding:76px 0}.hero-copy h1{font-size:39px}.work-visual.photo-work{height:225px}.service{min-height:auto}}
+/* Refined hero: match the supplied dark orange banner reference */
+body{background:#101112;color:#f8f8f8}
+header{position:absolute;background:rgba(12,13,14,.9);border-bottom:1px solid #ffffff12}
+.navlinks a:hover{color:#ff781f}
+.hero{min-height:690px;padding:112px max(24px,calc((100vw - 1320px)/2)) 92px;grid-template-columns:minmax(0,1.05fr) minmax(380px,.95fr);gap:22px;background:#111214}
+.hero:before{background:radial-gradient(ellipse at 72% 46%,#ff781f35 0%,transparent 32%),radial-gradient(ellipse at 0% 45%,#4a1c0a45 0%,transparent 38%),linear-gradient(110deg,#101112 0%,#191919 55%,#101112 100%)}
+.hero:after{background:linear-gradient(0deg,#101112 0%,transparent 26%)}
+.hero-copy{width:auto;max-width:690px;margin:0;animation:fadeUp .8s both}
+.hero-copy h1{font-size:clamp(40px,5vw,72px);letter-spacing:-3px;line-height:1.02;margin:24px 0 18px;max-width:760px}
+.hero-copy h1 em{color:#ff781f}
+.lead{max-width:620px;color:#d2d2d2;font-size:15px;line-height:1.75}
+.hero-features{display:flex;flex-wrap:wrap;gap:13px 18px;margin:24px 0 4px;color:#f1f1f1;font-size:11px}
+.hero-features span{white-space:nowrap}
+.hero-actions{margin-top:25px;flex-wrap:wrap}
+.hero-actions .btn{background:#ff781f;border:1px solid #ff781f}
+.hero-actions .btn.light{background:transparent;border-color:#ffffff66;color:#fff}
+.hero-actions .btn.light:hover{background:#fff;color:#171717}
+.portrait-stage{height:535px;width:100%;max-width:610px;margin:0;justify-self:end;position:relative;display:flex;align-items:flex-end;justify-content:center;overflow:visible;isolation:isolate}
+.portrait{height:100%;width:100%;max-width:100%;object-fit:contain;object-position:center bottom;position:relative;z-index:2;border:0;border-radius:0;background:transparent;box-shadow:none;filter:drop-shadow(0 22px 38px #0009);animation:portraitIn 1s both}
+.portrait-glow{position:absolute;width:76%;height:72%;bottom:5%;left:12%;border-radius:50%;background:radial-gradient(ellipse,#ff781f35 0%,#ff781f0a 48%,transparent 72%);z-index:0}
+.portrait-orbit,.orbit-a,.orbit-b,.float-shape,.float-dot,.portrait-caption{display:none!important}
+.hero-wave{height:45px;background:#101112;clip-path:polygon(0 60%,14% 24%,28% 60%,43% 76%,59% 30%,73% 54%,88% 22%,100% 45%,100% 100%,0 100%)}
+.services{background:#151617;color:#f8f8f8}
+.services .section-head h2,.section-head h2{color:#fff}
+.section-head p{color:#b7b7b7}
+.kicker,.number,.step b{color:#ff781f}
+.service{background:#1b1d1f;border:1px solid #303234;color:#fff}
+.service p,.work-info p,.step p{color:#b7b7b7}
+#work{background:#101112;color:#fff}
+.work{background:#1b1d1f;border:1px solid #303234}
+.work-visual{height:250px;padding:0;position:relative}
+.work-visual.photo-work{height:250px;padding:0}
+.photo-work img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-work .browser{display:none}
+.photo-work:after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(transparent,#1119)}
+.work-info{background:#1b1d1f}
+.pill{background:#30251e;color:#ffb17d}
+.about{background:#171819}
+.about-copy{color:#c0c0c0}
+.skill-list span{border-color:#3a3b3d;color:#e5e5e5}
+#process{background:#101112;color:#fff}
+.step{border-color:#343638}
+.contact{background:#101112}
+.contact-panel{background:linear-gradient(115deg,#ff781f,#ff9a43);color:#171717}
+.contact-panel .kicker,.contact-panel p{color:#321708}
+.contact-panel .btn{background:#171717;color:#fff}
+footer{background:#101112;border-color:#2a2b2d;color:#aaa}
+footer strong{color:#fff}
+@media(max-width:800px){
+ .hero{grid-template-columns:1fr;padding:112px 24px 70px;gap:0}
+ .hero-copy{max-width:720px}
+ .portrait-stage{height:410px;max-width:500px;justify-self:center;margin:12px auto 0}
+ .hero-copy h1{font-size:clamp(38px,8vw,58px)}
+}
+@media(max-width:560px){
+ .hero{padding:98px 17px 60px}
+ .hero-copy h1{font-size:38px;letter-spacing:-1.8px}
+ .hero-features{gap:10px 12px;font-size:10px}
+ .portrait-stage{height:330px;width:100%}
+ .hero-actions .btn{font-size:11px;padding:12px 15px}
+ section{padding:76px 0}
+ .work-visual.photo-work{height:215px}
+}
+
+</style>
 </head>
 <body>
 <header><div class="wrap"><nav><a class="logo" href="#">MICHAEL<span>.</span></a><div class="navlinks"><a href="#services">Services</a><a href="#work">Selected work</a><a href="#about">About</a><a href="#process">Process</a></div><a class="nav-cta" href="https://wa.me/2349161037213?text=Hello%20Michael%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20website%20project.">Let's talk on WhatsApp ↗</a><button class="menu" aria-label="Open navigation" onclick="document.querySelector('.navlinks').style.display=document.querySelector('.navlinks').style.display==='flex'?'none':'flex'">☰</button></nav></div></header>
 <main>
-  <div class="hero"><div class="hero-copy"><div class="eyebrow"><span class="dot"></span> Available for select projects</div><h1><em>I'M</em> MICHAEL<br>WEBSITE DEVELOPER &amp;<br><em>E-COMMERCE SPECIALIST</em></h1><p class="lead">I design and develop professional websites and e-commerce experiences that help businesses build trust, connect with customers, and grow online.</p><div class="hero-actions"><a class="btn" style="background:#ff781f" href="https://wa.me/2349161037213?text=Hello%20Michael%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20website%20project.">START YOUR PROJECT ↗</a><a class="btn light" href="https://wa.me/2349161037213?text=Hello%20Michael%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20website%20project.">LET'S DISCUSS YOUR PROJECT</a></div><div class="micro">WORDPRESS · WOOCOMMERCE · SHOPIFY · WIX · WEBFLOW</div></div><div class="portrait-stage"><div class="portrait-orbit orbit-a"></div><div class="portrait-orbit orbit-b"></div><span class="float-shape shape-triangle"></span><span class="float-shape shape-square"></span><span class="float-dot dot-a"></span><span class="float-dot dot-b"></span><img class="portrait" src="./michael-portrait.webp" alt="Michael Balogun, Website Developer and E-commerce Specialist"><div class="portrait-caption"><span>DESIGN / DEVELOP / GROW</span><b>Building digital experiences.</b></div></div><div class="hero-wave"></div></div>
+  <div class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="dot"></span> Available for new projects</div>
+    <h1><em>I’M</em> MICHAEL<br>WEBSITE DEVELOPER &amp;<br><em>E-COMMERCE SPECIALIST</em></h1>
+    <p class="lead">I design and develop professional websites and e-commerce experiences that help businesses build trust, connect with customers, and grow online.</p>
+    <div class="hero-features"><span>◉ &nbsp;Modern Designs</span><span>▣ &nbsp;E-commerce Solutions</span><span>↗ &nbsp;SEO Optimized</span><span>◉ &nbsp;Ongoing Support</span></div>
+    <div class="hero-actions"><a class="btn" href="https://wa.me/2349161037213?text=Hello%20Michael%2C%20I%20would%20like%20to%20discuss%20a%20website%20project.">☏ &nbsp; Start Your Project on WhatsApp</a><a class="btn light" href="#work">View My Work &nbsp;›</a></div>
+  </div>
+  <div class="portrait-stage"><div class="portrait-glow"></div><img class="portrait" src="./michael-portrait.webp" alt="Michael Balogun, Website Developer and E-commerce Specialist"></div>
+  <div class="hero-wave"></div>
+</div>
   <section class="services" id="services"><div class="wrap"><div class="section-head"><div><div class="kicker">What I do</div><h2>Everything your website<br>needs to work harder.</h2></div><p>From the first impression to the final click, I focus on building experiences that support your business goals.</p></div><div class="service-grid"><article class="service"><div class="number">01 / WEB DESIGN</div><h3>Website Design & Development</h3><p>Modern, responsive websites with clear structure, thoughtful layouts, and a consistent brand experience.</p></article><article class="service"><div class="number">02 / E-COMMERCE</div><h3>Online Store Development</h3><p>Easy-to-manage online stores with organized products, intuitive shopping journeys, and smooth checkout experiences.</p></article><article class="service"><div class="number">03 / OPTIMIZATION</div><h3>Redesign & Improvements</h3><p>Refresh an outdated website, improve usability, and make your important pages clearer and easier to navigate.</p></article></div></div></section>
   <section id="work"><div class="wrap"><div class="section-head"><div><div class="kicker">Selected concepts</div><h2>A closer look at<br>the kind of work I do.</h2></div><p>A selection of polished website concepts across ecommerce, fashion, business services, and pet retail—showcasing the kind of digital experiences I can create.</p></div><div class="work-grid">
     <article class="work"><div class="work-visual a photo-work"><img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Premium research ecommerce website concept"><div class="browser"><div class="browserbar"><i></i><i></i><i></i></div><div class="screen"><div class="tiny">RESEARCH / SCIENCE</div><strong>Precision in every detail.</strong><span class="fakebtn">Explore collection</span><div class="fakeimg"></div></div></div></div><div class="work-info"><h3>Premium Research Store</h3><p>A premium storefront concept with strong product presentation, clear categories, and a polished shopping experience.</p><span class="pill">WooCommerce · Elementor</span></div></article>
